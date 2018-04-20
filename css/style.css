@@ -41,8 +41,9 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    background: blue;
+    background: #f6a315;
     transition: ease-in 0.3s;
+    border-radius: 5px;
 }
 
 header nav ul li a {
@@ -137,20 +138,32 @@ section {
         width: auto;
         margin: 0;
         max-width: 1000px;
-        background: darkcyan;
         justify-content: space-between;
         display: flex;
+        background: transparent;
         flex-wrap: wrap;
     }
     .inline-top {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        background: #008a8b;
-        padding: 0px 7%;
+        background: #ffffff;
+        padding: 1% 7%;
+        border-bottom: 3px solid orange;
     }
     .logo {
         background: none;
+    }
+    header nav ul li a {
+        margin: 7px;
+        line-height: 0;
+        color: black;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        float: left;
+        margin: 25px;
     }
     
 }
