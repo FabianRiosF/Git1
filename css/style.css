@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e4e4e4;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    text-align: center;
+    top: 0;
+    background: #02495973;
+}
+
+header nav {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: darkcyan;
+}
+
+.menu-bar {
+    display: none;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li:hover {
+    background: blue;
+    transition: ease-in 0.3s;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    line-height: 32px;
+}
+
+header nav ul li a span {
+    margin-right: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.cerrar {
+    display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    header nav {
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: -100%;
+    }
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid white;
+    }
+
+    header nav ul {
+        text-align: left;
+    }
+
+    .menu-bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu-bar .bt-menu {
+        display: block;
+        padding: 20px 3px;
+        background: #02495973;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .inline-top {
+        display: grid;
+        grid-template-columns: 20% 75%;
+        grid-column-gap: 5px;
+    }
+
+    header nav ul li a {
+        line-height: 0px;
+    }
+
+    .cerrar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .cierra-izquierda {
+        text-align: left;
+    }
+
+    .cierra-derecha {
+        text-align: right;
+    }
+    .cerrar:hover {
+        background: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header nav {
+        width: auto;
+        margin: 0;
+        max-width: 1000px;
+        background: darkcyan;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inline-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: #008a8b;
+        padding: 0px 7%;
+    }
+    .logo {
+        background: none;
+    }
+    
+}
